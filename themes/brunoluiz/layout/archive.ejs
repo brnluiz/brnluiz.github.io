@@ -1,0 +1,9 @@
+<div class="row medium-8 large-7 columns">
+
+<% page.posts.each(function(post){ %>
+  <%- partial('article', {post: post, index: true}) %>
+<% }) %>
+
+<%- partial('_partial/navigation', {page: page}) %>
+
+</div>

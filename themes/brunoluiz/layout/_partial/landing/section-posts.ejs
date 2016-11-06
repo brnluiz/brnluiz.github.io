@@ -1,0 +1,26 @@
+<section class='row items large-up-3'>
+<%
+var posts = [
+  {title: 'Teste', image: 'https://unsplash.it/300/?blur', uri: '#'},
+  {title: 'Teste', image: 'https://unsplash.it/300/?blur', uri: '#'},
+  {title: 'Teste', image: 'https://unsplash.it/300/?blur', uri: '#'},
+  {title: 'Teste', image: 'https://unsplash.it/300/?blur', uri: '#'},
+  {title: 'Teste', image: 'https://unsplash.it/300/?blur', uri: '#'}
+];
+%>
+<% for (var i = 0; i < posts.length && i < 3; i++) { %>
+  <div class='column item'>
+    <div class='content' style='background-image: url(<%=posts[i].image%>)'>
+      <a href='<%=posts[i].uri%>'>
+        <div class='title'><%=posts[i].title%></div>
+      </a>
+    </div>
+  </div>
+<% } %>
+</section>
+
+<% if (posts.length > 3) { %>
+  <div class='row column see-more'>
+    <a class='secondary hollow button' href='#'>See more <%=title%> projects</a>
+  </div>
+<% } %>

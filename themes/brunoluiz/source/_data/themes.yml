@@ -1,0 +1,11 @@
+- name: hexo-foundation6-theme
+  description: Just a simple Foundation 6 boilerplate for HexoJS
+  link: https://github.com/brnluiz/hexo-foundation6-theme
+  preview: http://hexo.io/hexo-foundation6-theme
+  tags:
+    - responsive
+    - two_column
+    - one_column
+    - foundation
+    - simple
+    - sass
