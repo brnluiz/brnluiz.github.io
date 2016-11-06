@@ -7,7 +7,10 @@
 // @include foundation-typography;
 
 @import "_partial/header";
-@import "_partial/landing.section";
+@import "_partial/contentblocks";
+@import "_partial/thumbs";
+@import "_partial/landing";
+@import "_partial/project";
 
 html, body{
   font-family: 'Catamaran', sans-serif;
@@ -24,4 +27,23 @@ h1, h2, h3, h4, h5, h6 {
 p {
   line-height: 30px;
   font-size: 110%;
+}
+
+.colourset-0 {
+  background: #f2849e;
+}
+.colourset-1 {
+  background: #7ecaf6
+}
+.colourset-2 {
+  background: #7bd0c1;
+}
+.colourset-3 {
+  background: #c75b9b;
+}
+.colourset-4 {
+  background: #333333;
+}
+.colourset-5 {
+  background: #8499e7;
 }

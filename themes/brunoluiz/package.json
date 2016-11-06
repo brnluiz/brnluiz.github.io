@@ -4,5 +4,8 @@
   "private": true,
   "devDependencies": {
     "foundation-sites": "^6.2.4"
+  },
+  "dependencies": {
+    "photoswipe": "^4.1.1"
   }
 }

@@ -1,14 +1,17 @@
-<div class='row column landing-section'>
-  <div class='row column section-title'>
-    <h2><%=title%></h2>
-  </div>
-  <div class='section-content'>
-    <% if (!static) { %>
-    <%- partial('_partial/landing/section-posts', {
-      tag: id
-    }) %>
-    <% } else { %>
+<div class='row column landing content-block'>
+  <h2><%=title%></h2>
+
+  <% if (!static) { %>
+  <section class='large-up-3'>
+  <%- partial('_partial/landing/section-posts', {
+    tag: id
+  }) %>
+  </section>
+
+  <% } else { %>
+  <section>
     <%- partial('_partial/landing/section-'+id) %>
-    <% } %>
-  </div>
+  </section>
+
+  <% } %>
 </div>

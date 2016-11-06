@@ -1,0 +1,26 @@
+.content-block {
+  $base-color: rgb(33,33,33);
+
+  h2 {
+    @extend .row.column;
+
+    color: $base-color;
+    font-size: 200%;
+    margin-left: 0;
+    display: inline-block;
+    padding-bottom: .4rem;
+    padding-left: 0;
+    padding-right: 1rem;
+    border-bottom: 2px solid lighten($base-color, 50%);
+    margin-bottom: 2rem;
+  }
+
+  section {
+    @extend .row.column;
+    padding-left: 2rem;
+  }
+
+  strong {
+    border-bottom: 1px dotted rgb(140,140,140);
+  }
+}
