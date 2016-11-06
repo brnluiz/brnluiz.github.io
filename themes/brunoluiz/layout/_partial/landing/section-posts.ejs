@@ -17,22 +17,19 @@ let getRandomColour = (min, max) => {
   return random;
 }
 
-let posts = site.categories
-.findOne({name: 'web'})
-.posts.limit(3);
+let posts = site.categories.findOne({name: 'web'}).posts.limit(3);
 
 posts.each((post) => {
-  let featured_image = url_for(post.permalink + post.photos[0]);
   let bg_colour = "colourset-"+getRandomColour(0,max_colours);
-  %>
-  <div class='column'>
-    <div class='thumb-item'>
-      <div class='content-bg' style='background-image: url("<%=featured_image%>")'></div>
-      <a href='<%= url_for(post.path) %>' class='<%=bg_colour%>'></a>
-      <div class='title'><%=post.title%></div>
-    </div>
-  </div>
-<%  }); %>
+  let featured_image = url_for(post.permalink + post.photos[0]) + '.jpg';
+%>
+  <%- partial('_partial/thumb-item', {
+    post: post,
+    title_enabled: true,
+    bg_colour: bg_colour,
+    image: featured_image
+  }) %>
+<% }); %>
 
 <% if (posts.length > 3) { %>
   <div class='row column see-more'>

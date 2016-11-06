@@ -1,5 +1,5 @@
 @charset 'utf-8';
-@import "../../node_modules/foundation-sites/scss/foundation";
+@import '../../node_modules/foundation-sites/scss/foundation';
 
 // @include foundation-everything;
 @include foundation-global-styles;
@@ -7,13 +7,13 @@
 @include foundation-typography;
 @include foundation-button;
 
-@import "_partial/header";
-@import "_partial/contentblocks";
-@import "_partial/thumbs";
-@import "_partial/landing";
-@import "_partial/project";
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-@import "https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700|Catamaran:100,200,300,400,500,600,700";
+@import '_partial/header';
+@import '_partial/contentblocks';
+@import '_partial/thumbs';
+@import '_partial/landing';
+@import '_partial/project';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700|Catamaran:100,200,300,400,500,600,700';
 
 html, body {
   font-family: 'Catamaran', sans-serif;

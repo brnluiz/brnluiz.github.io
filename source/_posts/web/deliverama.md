@@ -6,8 +6,8 @@ categories:
 date: 2016-11-06 10:21:25
 deliveredin: 2013
 photos:
-  - deliverama1.jpg
-  - deliverama2.jpg
+  - deliverama1
+  - deliverama2
 skills:
   - PHP
   - CodeIgniter

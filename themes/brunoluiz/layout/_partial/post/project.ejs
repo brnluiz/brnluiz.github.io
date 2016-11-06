@@ -24,15 +24,15 @@ let getRandomColour = (min, max) => {
     <div class='large-9 small-12 column'>
       <section class='large-up-2'>
         <% post.photos.forEach((photo) => {
-          let uri = url_for(post.permalink + photo);
           let bg_colour = "colourset-"+getRandomColour(0,max_colours);
+          let image = url_for(post.permalink + photo + '.jpg');
           %>
-          <div class='column'>
-            <div class='thumb-item'>
-              <div class='content-bg' style='background-image: url("<%=uri%>")'></div>
-              <a href='<%=uri%>' class='<%=bg_colour%>'></a>
-            </div>
-          </div>
+          <%- partial('_partial/thumb-item', {
+            post: post,
+            title_enabled: false,
+            bg_colour: bg_colour,
+            image: image
+          }) %>
           <% }); %>
         </section>
     </div>
