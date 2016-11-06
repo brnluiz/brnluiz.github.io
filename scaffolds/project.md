@@ -3,8 +3,7 @@ title: {{ title }}
 date: {{ date }}
 categories:
   - portfolio
-tags:
+skills:
 photos:
-startdate: {{ date }}
-enddate: {{ date }}
+deliveredin: 2016
 ---

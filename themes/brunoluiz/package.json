@@ -6,6 +6,7 @@
     "foundation-sites": "^6.2.4"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "photoswipe": "^4.1.1"
   }
 }

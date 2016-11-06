@@ -1,20 +1,22 @@
 @charset 'utf-8';
 @import "../../node_modules/foundation-sites/scss/foundation";
 
-@include foundation-everything;
-// @include foundation-global-styles;
-// @include foundation-grid;
-// @include foundation-typography;
+// @include foundation-everything;
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
 
 @import "_partial/header";
 @import "_partial/contentblocks";
 @import "_partial/thumbs";
 @import "_partial/landing";
 @import "_partial/project";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700|Catamaran:100,200,300,400,500,600,700";
 
-html, body{
+html, body {
   font-family: 'Catamaran', sans-serif;
-  // font-family: 'Assistant', sans-serif;
   background-color: #fff;
 }
 
@@ -25,7 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  line-height: 30px;
+  line-height: 1.75rem;
+  font-weight: 300;
   font-size: 110%;
 }
 

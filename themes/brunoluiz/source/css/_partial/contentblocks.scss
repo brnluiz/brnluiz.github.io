@@ -13,6 +13,11 @@
     padding-right: 1rem;
     border-bottom: 2px solid lighten($base-color, 50%);
     margin-bottom: 2rem;
+
+    a {
+      color: lighten($base-color, 50%);
+      font-size: 50%;
+    }
   }
 
   section {

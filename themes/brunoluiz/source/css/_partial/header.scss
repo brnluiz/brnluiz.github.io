@@ -1,18 +1,19 @@
 $header-font-color: rgb(33,33,33);
 
 header {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   text-align: left;
-  padding: 4rem 0 2rem 2rem;
+  padding: 2rem 0 4rem 2rem;
 
   h1 {
+    margin: 0;
     margin-bottom: 4px;
     color: $header-font-color;
     font-size: 350%;
   }
 
   h2 {
-    margin-top: 0rem;
+    margin: 0rem;
     font-size: 125%;
     color: lighten($header-font-color, 25%);
   }
