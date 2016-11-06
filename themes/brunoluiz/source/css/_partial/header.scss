@@ -10,6 +10,15 @@ header {
     margin-bottom: 4px;
     color: $header-font-color;
     font-size: 350%;
+
+    a {
+      color: $header-font-color;
+
+      &:hover{
+        color: lighten($header-font-color, 20%);
+        border-bottom: 1px dotted lighten($header-font-color, 50%);
+      }
+    }
   }
 
   h2 {

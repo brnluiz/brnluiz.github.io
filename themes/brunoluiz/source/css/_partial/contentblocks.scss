@@ -17,6 +17,11 @@
     a {
       color: lighten($base-color, 50%);
       font-size: 50%;
+
+      &:hover{
+        color: darken($header-font-color, 20%);
+        border-bottom: 1px dotted darken($header-font-color, 20%);
+      }
     }
   }
 
