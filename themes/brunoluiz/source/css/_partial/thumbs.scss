@@ -1,7 +1,21 @@
 .thumb-item {
   border-radius: 5px;
   position: relative;
-  height: 350px;
+
+  // Small configs
+  @media screen and (max-width: 39.9375em) {
+    height: 30rem;
+    margin-bottom: 3rem;
+  }
+  // Medium configs
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    height: 40rem;
+    margin-bottom: 3rem;
+  }
+  // Big configs
+  @media screen and (min-width: 64em) {
+    height: 350px;
+  }
 
   transition: transform .2s ease-in-out;
   &:hover {

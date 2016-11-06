@@ -21,8 +21,21 @@ let getRandomColour = (min, max) => {
   <h2><%=post.title%> <a href='<%=url_for(config.root)%>'>(return to home)</a></h2>
 
   <div class='row'>
+    <div class='large-3 large-9-push small-12 column'>
+      <%- post.content %>
+
+      <div class='date'><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Delivered in <%=post.deliveredin%></div>
+
+      <ul class='skills'>
+        <% if(post.skills) {
+          post.skills.forEach((skill) => { %>
+            <li><%=skill%></li>
+            <% });
+          } %>
+      </ul>
+    </div>
     <div class='large-9 small-12 column'>
-      <section class='large-up-2'>
+      <section class='large-up-2 small-up-1 medium-up-2'>
         <% post.photos.forEach((photo) => {
           let bg_colour = "colourset-"+getRandomColour(0,max_colours);
           let image = url_for(post.permalink + photo + '.jpg');
@@ -35,20 +48,6 @@ let getRandomColour = (min, max) => {
           }) %>
           <% }); %>
         </section>
-    </div>
-    <div class='large-3 small-12 column'>
-      <%- post.content %>
-
-      <div class='date'><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Delivered in <%=post.deliveredin%></div>
-
-      <ul class='skills'>
-        <% if(post.skills) {
-          post.skills.forEach((skill) => { %>
-            <li><%=skill%></li>
-            <% });
-          } %>
-      </ul>
-
     </div>
   </div>
 </div>
