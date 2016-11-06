@@ -24,8 +24,8 @@ posts.each((post) => {
   let featured_image = url_for(post.permalink + post.photos[0]) + '.jpg';
 %>
   <%- partial('_partial/thumb-item', {
-    post: post,
-    title_enabled: true,
+    title: post.title,
+    link: post.path,
     bg_colour: bg_colour,
     image: featured_image
   }) %>

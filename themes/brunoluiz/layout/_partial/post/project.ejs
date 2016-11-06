@@ -41,8 +41,8 @@ let getRandomColour = (min, max) => {
           let image = url_for(post.permalink + photo + '.jpg');
           %>
           <%- partial('_partial/thumb-item', {
-            post: post,
-            title_enabled: false,
+            title: false,
+            link: image,
             bg_colour: bg_colour,
             image: image
           }) %>

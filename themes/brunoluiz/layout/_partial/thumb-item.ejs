@@ -1,9 +1,9 @@
 <div class='column'>
   <div class='thumb-item'>
     <div class='content-bg' style='background-image: url("<%=image%>")'></div>
-    <a href='<%= url_for(post.path) %>' class='<%=bg_colour%>'></a>
-    <% if(title_enabled) { %>
-    <div class='title'><%=post.title%></div>
+    <a href='<%= url_for(link) %>' class='<%=bg_colour%>'></a>
+    <% if(title != false) { %>
+    <div class='title'><%=title%></div>
     <% } %>
   </div>
 </div>
