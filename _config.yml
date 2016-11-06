@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Test
-subtitle:
+title: Bruno Luiz Silva Portfolio
+subtitle: Getting ideas out of scratch
 description:
-author: John Doe
-language:
-timezone:
+author: Bruno Luiz Silva
+language: en
+timezone: GMT-3
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
