@@ -5,8 +5,7 @@
   <div class='section-content'>
     <% if (!static) { %>
     <%- partial('_partial/landing/section-posts', {
-      title: title,
-      id: id
+      tag: id
     }) %>
     <% } else { %>
     <%- partial('_partial/landing/section-'+id) %>

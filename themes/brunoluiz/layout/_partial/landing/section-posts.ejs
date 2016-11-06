@@ -1,22 +1,19 @@
 <section class='row items large-up-3'>
 <%
-var posts = [
-  {title: 'Teste', image: 'https://unsplash.it/300/?blur', uri: '#'},
-  {title: 'Teste', image: 'https://unsplash.it/300/?blur', uri: '#'},
-  {title: 'Teste', image: 'https://unsplash.it/300/?blur', uri: '#'},
-  {title: 'Teste', image: 'https://unsplash.it/300/?blur', uri: '#'},
-  {title: 'Teste', image: 'https://unsplash.it/300/?blur', uri: '#'}
-];
-%>
-<% for (var i = 0; i < posts.length && i < 3; i++) { %>
+var posts = site.categories
+.findOne({name: 'web'})
+.posts.limit(3);
+
+posts.each((post) => {
+  %>
   <div class='column item'>
-    <div class='content' style='background-image: url(<%=posts[i].image%>)'>
-      <a href='<%=posts[i].uri%>'>
-        <div class='title'><%=posts[i].title%></div>
+    <div class='content' style='background-image: url("<%=url_for(post.permalink + post.photos[0])%>")'>
+      <a href='<%= url_for(post.path) %>'>
+        <div class='title'><%=post.title%></div>
       </a>
     </div>
   </div>
-<% } %>
+<%  }); %>
 </section>
 
 <% if (posts.length > 3) { %>
