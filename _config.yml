@@ -69,7 +69,7 @@ theme: brunoluiz
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
 
 node_sass:
   debug: false

@@ -41,20 +41,28 @@
 
   .see-more {
     margin-top: 0rem;
+
+    a {
+      // text-transform: uppercase;
+      // letter-spacing: 1px;
+      // font-weight: 700;
+      // background: #333;
+      // color: #fff;
+    }
   }
 
   a {
     color: $base-color;
     font-weight: 400;
-    &:hover {
-      border-bottom: 1px dotted rgb(140,140,140);
-    }
   }
 
   .medias {
     font-size: 110%;
     a {
       margin-right: .75rem;
+      &:hover {
+        border-bottom: 1px dotted rgb(140,140,140);
+      }
     }
   }
 }
