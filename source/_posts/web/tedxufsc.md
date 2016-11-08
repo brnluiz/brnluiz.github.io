@@ -10,5 +10,7 @@ photos:
 skills:
   - jQuery
   - Bootstrap
+repo:
+site:
 ---
 Static landing page for the TEDxUFSC 2013. Totally made on top of Bootstrap 2.

@@ -15,6 +15,7 @@ skills:
 photos:
   - evplaylist1
   - evplaylist2
-code: https://github.com/brnluiz/evplaylist
+repo: https://github.com/brnluiz/evplaylist
+site: http://brunoluiz.net/evplaylist
 ---
 Web app which gathers music posts from Facebook Events and make a playlist from it.

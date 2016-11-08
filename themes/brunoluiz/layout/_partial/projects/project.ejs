@@ -24,7 +24,19 @@ let getRandomColour = (min, max) => {
 
       <%- post.content %>
 
-      <div class='date'><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Delivered in <%=post.deliveredin%></div>
+      <div class='info'><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Delivered in <%=post.deliveredin%></div>
+      <% if(post.repo) { %>
+      <div class='info'>
+        <i class="fa fa-globe" aria-hidden="true"></i>
+        <a href='<%=post.site%>'><%=post.site%></a>
+      </div>
+      <% } %>
+      <% if(post.repo) { %>
+      <div class='info'>
+        <i class="fa fa-git" aria-hidden="true"></i>
+        <a href='<%=post.repo%>'><%=post.repo%></a>
+      </div>
+      <% } %>
 
       <ul class='skills'>
         <% if(post.skills) {

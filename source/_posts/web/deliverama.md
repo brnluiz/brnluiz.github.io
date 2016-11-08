@@ -13,5 +13,7 @@ skills:
   - CodeIgniter
   - MySQL
   - Bootstrap
+repo:
+site:
 ---
 E-commerce website used for my first startup, Deliverama. It used a modified version of GoCart, an e-commerce software based on CodeIgniter, and it was my first big project.
