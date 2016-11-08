@@ -1,5 +1,5 @@
 .project {
-  $skill-base-colour: rgb(33,33,33);
+  $skill-base-colour: rgb(77,77,77);
 
   h3 {
     @extend .row.column;
@@ -21,14 +21,16 @@
 
   ul {
     @extend .row.column;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 
     li {
       list-style: none;
       display: inline-block;
+      color: lighten($skill-base-colour, 5%);
       border: 1px solid $skill-base-colour;
-      padding: .4rem .75rem;
+      padding: .3rem .75rem;
       margin-bottom: .25rem;
+      border-radius: 4px;
     }
   }
 }
