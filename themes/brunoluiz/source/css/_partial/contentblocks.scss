@@ -1,6 +1,6 @@
 .content-block {
   $base-color: rgb(33,33,33);
-  margin-top: 4rem;
+  margin-top: 3rem;
 
   h2 {
     @extend .row.column;
@@ -13,7 +13,7 @@
     padding-left: 0;
     padding-right: 1rem;
     border-bottom: 2px solid lighten($base-color, 50%);
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 
     a {
       color: lighten($base-color, 50%);
@@ -41,5 +41,20 @@
 
   .see-more {
     margin-top: 0rem;
+  }
+
+  a {
+    color: $base-color;
+    font-weight: 400;
+    &:hover {
+      border-bottom: 1px dotted rgb(140,140,140);
+    }
+  }
+
+  .medias {
+    font-size: 110%;
+    a {
+      margin-right: .75rem;
+    }
   }
 }

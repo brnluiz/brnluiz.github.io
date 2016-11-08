@@ -15,7 +15,7 @@
 @import '_partial/project';
 @import 'variables';
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
-@import 'https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700|Catamaran:100,200,300,400,500,600,700';
+@import 'https://fonts.googleapis.com/css?family=Assistant:300,400,700|Catamaran:300,400,700';
 
 html, body {
   font-family: 'Catamaran', sans-serif;
@@ -39,6 +39,10 @@ p {
   @extend .hollow;
   @extend .secondary;
 
+  border-radius: 4px;
+}
+
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
   border-radius: 4px;
 }
 
