@@ -1,0 +1,15 @@
+<%
+// Categories names
+let title = '';
+switch (category) {
+  case 'web':
+    title = 'Web Development';
+    break;
+  case 'embedded':
+    title = 'Embedded Systems';
+    break;
+  default:
+    title = 'Category null';
+}
+%>
+<%=title%>

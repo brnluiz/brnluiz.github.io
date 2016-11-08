@@ -4,9 +4,10 @@
   id: 'intro'
 }) %>
 <%- partial('_partial/landing/section', {
-  title: 'Web Development',
   static: false,
-  id: 'web'
+  title: partial('_partial/category/title', {category: 'web'}),
+  id: 'web',
+  limit: 3
 }) %>
 <%- partial('_partial/landing/section', {
   title: 'Let\'s talk?',

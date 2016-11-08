@@ -1,9 +1,17 @@
-<div class="row medium-8 large-7 columns">
+<div class='row column content-block'>
+  <h2><%- partial('_partial/category/title', {category: page.category}) %><a href='<%=url_for(config.root)%>'>(return to home)</a></h2>
 
-<% page.posts.each(function(post){ %>
-  <%- partial('article', {post: post, index: true}) %>
-<% }) %>
-
-<%- partial('_partial/navigation', {page: page}) %>
-
+  <section class='row large-up-3 small-up-1 medium-up-2'>
+  <%- partial('_partial/category/grid')%>
+  </section>
 </div>
+
+<% if (page.total > 1){ %>
+  <div class="pagination-centered">
+    <nav class="pagination">
+    <%- paginator({
+      prev_next: false
+    }) %>
+    </nav>
+  </div>
+<% } %>

@@ -1,0 +1,32 @@
+<%
+let choosen_colours = [];
+let max_colours = 5;
+let getRandomColour = (min, max) => {
+  let random = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  // Reset colour arrays if it reached the maximum colour range
+  if(choosen_colours.length == max_colours)
+    choosen_colours = [];
+
+  // Avoid repeated colours for the defined number of max_colours
+  if (choosen_colours.indexOf(random) != -1)
+    return getRandomColour(min,max);
+
+  // Just record which colour was gotten, duh
+  choosen_colours.push(random);
+  return random;
+}
+
+let posts = site.categories.findOne({name: category}).posts.sort('date', -1).limit(limit);
+
+posts.each((post) => {
+  let bg_colour = "colourset-"+getRandomColour(0,max_colours);
+  let featured_image = url_for(post.permalink + post.photos[0]) + '.jpg';
+%>
+  <%- partial('_partial/thumb-item', {
+    title: post.title,
+    link: post.path,
+    bg_colour: bg_colour,
+    image: featured_image
+  }) %>
+<% }); %>

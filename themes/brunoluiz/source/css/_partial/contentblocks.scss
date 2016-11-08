@@ -1,6 +1,5 @@
 .content-block {
   $base-color: rgb(33,33,33);
-
   margin-top: 4rem;
 
   h2 {
@@ -32,11 +31,15 @@
 
     // Only on Big configs
     @media screen and (min-width: 64em) {
-      padding-left: 2rem;
+      // padding-left: 2rem;
     }
   }
 
   strong {
     border-bottom: 1px dotted rgb(140,140,140);
+  }
+
+  .see-more {
+    margin-top: 2rem;
   }
 }

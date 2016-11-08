@@ -1,9 +1,13 @@
+@import '../variables';
+
 $header-font-color: rgb(33,33,33);
 
 header {
-  margin-bottom: 1rem;
   text-align: left;
-  padding: 2rem 0 4rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  // padding-left: 2rem;
+  margin-bottom: 1rem;
 
   h1 {
     margin: 0;
@@ -26,4 +30,14 @@ header {
     font-size: 125%;
     color: lighten($header-font-color, 25%);
   }
+
 }
+
+.icons {
+  display: inline-block;
+  font-size: 75%;
+  i { margin-left: .5rem; }
+}
+.embedded { color: $colour-1; }
+.entrepreneurship { color: $colour-2; }
+.dev { color: $colour-3; }

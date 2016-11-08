@@ -18,10 +18,10 @@ let getRandomColour = (min, max) => {
 }
 %>
 <div class='row column project content-block'>
-  <h2><%=post.title%> <a href='<%=url_for(config.root)%>'>(return to home)</a></h2>
-
   <div class='row'>
-    <div class='large-3 large-9-push small-12 column'>
+    <div class='large-4 small-12 column'>
+      <h2><%=post.title%> <a href='<%=url_for(config.root)%>'>(return to home)</a></h2>
+
       <%- post.content %>
 
       <div class='date'><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Delivered in <%=post.deliveredin%></div>
@@ -34,7 +34,7 @@ let getRandomColour = (min, max) => {
           } %>
       </ul>
     </div>
-    <div class='large-9 small-12 column'>
+    <div class='large-8 small-12 column'>
       <section class='large-up-2 small-up-1 medium-up-2'>
         <% post.photos.forEach((photo) => {
           let bg_colour = "colourset-"+getRandomColour(0,max_colours);

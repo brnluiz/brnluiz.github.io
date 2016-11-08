@@ -2,11 +2,10 @@
   <h2><%=title%></h2>
 
   <% if (!static) { %>
-  <section class='large-up-3'>
   <%- partial('_partial/landing/section-posts', {
-    tag: id
+    category: id,
+    limit: limit
   }) %>
-  </section>
 
   <% } else { %>
   <section>
