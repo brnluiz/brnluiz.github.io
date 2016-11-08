@@ -1,0 +1,2 @@
+- Implement PhotoSwipe
+- Improve SEO
