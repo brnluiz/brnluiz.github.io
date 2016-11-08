@@ -10,6 +10,12 @@
   limit: 3
 }) %>
 <%- partial('_partial/landing/section', {
+  static: false,
+  title: partial('_partial/category/title', {category: 'embedded'}),
+  id: 'embedded',
+  limit: 3
+}) %>
+<%- partial('_partial/landing/section', {
   title: 'Let\'s talk?',
   static: true,
   id: 'contact'
