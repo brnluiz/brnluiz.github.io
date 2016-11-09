@@ -11,7 +11,7 @@
    *    without disabling user zoom.
    */
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
-@import 'https://fonts.googleapis.com/css?family=Assistant:300,400,700|Catamaran:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Assistant:300,700|Catamaran:300,400,700';
 html {
   font-family: sans-serif;
   /* 1 */
@@ -2001,12 +2001,12 @@ header {
   .content-block a {
     color: #212121;
     font-weight: 400; }
-    .content-block a:hover {
-      border-bottom: 1px dotted #8c8c8c; }
   .content-block .medias {
     font-size: 110%; }
     .content-block .medias a {
       margin-right: .75rem; }
+      .content-block .medias a:hover {
+        border-bottom: 1px dotted #8c8c8c; }
 
 .project h3 {
   font-size: 150%; }
