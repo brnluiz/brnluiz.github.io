@@ -71,6 +71,8 @@ theme: brunoluiz
 deploy:
   type: git
   repo: https://github.com/brnluiz/brnluiz.github.io
+  branch: master
+  message: Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}
 
 node_sass:
   debug: false
