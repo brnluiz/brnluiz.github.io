@@ -3,7 +3,7 @@ title: Protocol Gateway
 categories:
   - embedded
   - portfolio
-date: 2016-12-04 15:00:00
+date: 2015-12-04 15:00:00
 deliveredin: 2015
 photos:
   - beaglebone2

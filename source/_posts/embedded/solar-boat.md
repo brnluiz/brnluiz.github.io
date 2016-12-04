@@ -3,7 +3,7 @@ title: Solar Boat HMI
 categories:
   - embedded
   - portfolio
-date: 2016-11-08 14:51:52
+date: 2011-11-08 14:51:52
 deliveredin: 2011
 photos:
   - inepqt1
