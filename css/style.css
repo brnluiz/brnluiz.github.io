@@ -1999,6 +1999,12 @@ header {
     border-bottom: 1px dotted #8c8c8c; }
   .content-block .see-more {
     margin-top: 0rem; }
+    .content-block .see-more a {
+      font-weight: 400; }
+      .content-block .see-more a:hover {
+        background: #222;
+        color: #fff;
+        border: 1px solid #222; }
   .content-block a {
     color: #212121;
     font-weight: 600; }
