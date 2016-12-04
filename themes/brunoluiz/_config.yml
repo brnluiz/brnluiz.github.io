@@ -1,13 +1,14 @@
 # Header
 menu:
   Home: /
+  Cv: /cv
 rss: /atom.xml
 
 # Content
 excerpt_link: Read More
 
 # Miscellaneous
-google_analytics: 
+google_analytics:
 favicon: /favicon.png
 twitter:
 google_plus:

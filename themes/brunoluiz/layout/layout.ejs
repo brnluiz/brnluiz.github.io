@@ -2,8 +2,9 @@
 <html>
   <%- partial('_partial/head') %>
   <body>
+    <% if(page.title != 'cv') { %>
     <%- partial('_partial/header') %>
-
+    <% } %>
     <section id="main">
       <%- body %>
     </section>
