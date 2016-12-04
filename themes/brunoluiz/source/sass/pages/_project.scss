@@ -1,15 +1,12 @@
 .project {
-  $skill-base-colour: rgb(77,77,77);
 
   h3 {
     @extend .row.column;
-
     font-size: 150%;
   }
 
   .info {
     @extend .row.column;
-
     font-size: 100%;
     font-weight: 300;
     margin-bottom: .3rem;

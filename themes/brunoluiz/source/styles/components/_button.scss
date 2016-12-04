@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.default-button {
+  @extend .button;
+  @extend .hollow;
+  @extend .secondary;
+
+  border-radius: 4px;
+}

@@ -1,0 +1,53 @@
+@charset 'utf-8';
+@import '../../node_modules/foundation-sites/scss/foundation';
+
+// @include foundation-everything;
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-pagination;
+
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Assistant:300,700|Catamaran:300,400,700';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendor/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/contentblock';
+
+// 5. Components
+@import
+  'components/button',
+  'components/input',
+  'components/nav',
+  'components/thumb';
+
+// 6. Page-specific styles
+@import
+  'pages/home',
+  'pages/cv',
+  'pages/project';
+
+// 7. Themes
+@import
+  'themes/default';

@@ -1,6 +1,6 @@
-@import '../variables';
-
-$header-font-color: rgb(33,33,33);
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
 
 header {
   text-align: left;
@@ -32,14 +32,3 @@ header {
   }
 
 }
-
-.icons {
-  display: inline-block;
-  font-size: 75%;
-  i { margin-left: .5rem; }
-}
-.engineering { color: $colour-6; }
-.design { color: $colour-1}
-.embedded { color: $colour-3; }
-.entrepreneurship { color: $colour-2; }
-.dev { color: $colour-4; }
