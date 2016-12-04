@@ -43,11 +43,14 @@
     margin-top: 0rem;
 
     a {
-      // text-transform: uppercase;
-      // letter-spacing: 1px;
-      // font-weight: 700;
+      font-weight: 400;
       // background: #333;
       // color: #fff;
+      &:hover {
+        background: #222;
+        color: #fff;
+        border: 1px solid #222;
+      }
     }
   }
 
