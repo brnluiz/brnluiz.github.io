@@ -1883,7 +1883,6 @@ select {
 header {
   text-align: left;
   padding-top: 2rem;
-  padding-bottom: 2rem;
   margin-bottom: 1rem; }
   header h1 {
     margin: 0;
@@ -2002,7 +2001,10 @@ header {
     margin-top: 0rem; }
   .content-block a {
     color: #212121;
-    font-weight: 400; }
+    font-weight: 600; }
+    .content-block a:hover {
+      color: #616161;
+      border-bottom: 1px dotted #8c8c8c; }
   .content-block .medias {
     font-size: 110%; }
     .content-block .medias a {
@@ -2052,7 +2054,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
 p {
-  line-height: 1.75rem;
+  line-height: 2.15rem;
   font-weight: 300;
   font-size: 110%; }
 
