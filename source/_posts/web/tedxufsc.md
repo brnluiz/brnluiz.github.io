@@ -14,4 +14,4 @@ skills:
 repo:
 site:
 ---
-Static landing page for the TEDxUFSC 2013. Totally made on top of Bootstrap 2.
+Static landing page for the TEDxUFSC 2013. Made on top of Bootstrap 2.

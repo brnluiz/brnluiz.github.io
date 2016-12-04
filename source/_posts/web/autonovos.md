@@ -15,4 +15,4 @@ skills:
 repo:
 site: http://autonovos.com.br
 ---
-E-commerce system for a car reseller. It was made with PHP 5.4, without any back or front-end framework (I think I was insane when I was younger).
+E-commerce system for a car reseller. It was made with PHP 5, without any back or front-end framework.
