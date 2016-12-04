@@ -1,13 +1,6 @@
 @charset 'utf-8';
-@import '../../node_modules/foundation-sites/scss/foundation';
 
-// @include foundation-everything;
-@include foundation-global-styles;
-@include foundation-grid;
-@include foundation-typography;
-@include foundation-button;
-@include foundation-forms;
-@include foundation-pagination;
+@import '../../node_modules/foundation-sites/scss/foundation';
 
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 @import 'https://fonts.googleapis.com/css?family=Assistant:300,700|Catamaran:300,400,700';
@@ -51,3 +44,11 @@
 // 7. Themes
 @import
   'themes/default';
+
+  // @include foundation-everything;
+  @include foundation-global-styles;
+  @include foundation-grid;
+  @include foundation-typography;
+  @include foundation-button;
+  @include foundation-forms;
+  @include foundation-pagination;
