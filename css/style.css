@@ -1,3 +1,5 @@
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Assistant:300,700|Catamaran:300,400,700';
 /**
  * Foundation for Sites by ZURB
  * Version 6.2.4
@@ -10,8 +12,6 @@
    * 2. Prevent iOS and IE text size adjust after device orientation change,
    *    without disabling user zoom.
    */
-@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
-@import 'https://fonts.googleapis.com/css?family=Assistant:300,700|Catamaran:300,400,700';
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1880,6 +1880,95 @@ select {
   display: inline-block;
   margin-left: 0.5rem; }
 
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box; }
+
+html, body {
+  background: #fff; }
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  font-family: "Catamaran", "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #222222; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Assistant", "Catamaran", "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 300; }
+
+p {
+  line-height: 2.15rem;
+  font-weight: 300;
+  font-size: 110%; }
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+  max-width: 1180px;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 20px;
+  /* 3 */
+  padding-right: 20px;
+  /* 3 */
+  width: 100%;
+  /* 1 */ }
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap; }
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 header {
   text-align: left;
   padding-top: 2rem;
@@ -1899,26 +1988,65 @@ header {
     font-size: 125%;
     color: #616161; }
 
-.icons {
-  display: inline-block;
-  font-size: 75%; }
-  .icons i {
-    margin-left: .5rem; }
+.content-block {
+  margin-top: 3rem; }
+  .content-block h2 {
+    color: #212121;
+    font-size: 200%;
+    margin-left: 0;
+    display: inline-block;
+    padding-bottom: .4rem;
+    padding-left: 0;
+    padding-right: 1rem;
+    border-bottom: 2px solid #a1a1a1;
+    margin-bottom: 1.25rem; }
+    .content-block h2 a {
+      color: #a1a1a1;
+      font-size: 50%; }
+      .content-block h2 a:hover {
+        color: black;
+        border-bottom: 1px dotted black; }
+  .content-block strong {
+    border-bottom: 1px dotted #8c8c8c; }
+  .content-block .see-more {
+    margin-top: 0rem; }
+    .content-block .see-more a {
+      font-weight: 400; }
+      .content-block .see-more a:hover {
+        background: #222;
+        color: #fff;
+        border: 1px solid #222; }
+  .content-block a {
+    color: #212121;
+    font-weight: 600; }
+    .content-block a:hover {
+      color: #616161;
+      border-bottom: 1px dotted #8c8c8c; }
+  .content-block .medias {
+    font-size: 110%; }
+    .content-block .medias a {
+      margin-right: .75rem; }
+      .content-block .medias a:hover {
+        border-bottom: 1px dotted #8c8c8c; }
 
-.engineering {
-  color: #8499e7; }
+.default-button {
+  border-radius: 4px; }
 
-.design {
-  color: #f2849e; }
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+  border-radius: 4px; }
 
-.embedded {
-  color: #7bd0c1; }
-
-.entrepreneurship {
-  color: #7ecaf6; }
-
-.dev {
-  color: #c75b9b; }
+nav.pagination {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem; }
+  nav.pagination a, nav.pagination span, nav.pagination .page-number.current {
+    font-size: 150%;
+    padding: .25rem 1rem .25rem 1rem;
+    display: inline-block;
+    background: #fafafa; }
+  nav.pagination span, nav.pagination .page-number.current {
+    background: #212121; }
 
 .thumb-item {
   border-radius: 5px;
@@ -1977,47 +2105,6 @@ header {
     text-transform: uppercase;
     background: black; }
 
-.content-block {
-  margin-top: 3rem; }
-  .content-block h2 {
-    color: #212121;
-    font-size: 200%;
-    margin-left: 0;
-    display: inline-block;
-    padding-bottom: .4rem;
-    padding-left: 0;
-    padding-right: 1rem;
-    border-bottom: 2px solid #a1a1a1;
-    margin-bottom: 1.25rem; }
-    .content-block h2 a {
-      color: #a1a1a1;
-      font-size: 50%; }
-      .content-block h2 a:hover {
-        color: black;
-        border-bottom: 1px dotted black; }
-  .content-block strong {
-    border-bottom: 1px dotted #8c8c8c; }
-  .content-block .see-more {
-    margin-top: 0rem; }
-    .content-block .see-more a {
-      font-weight: 400; }
-      .content-block .see-more a:hover {
-        background: #222;
-        color: #fff;
-        border: 1px solid #222; }
-  .content-block a {
-    color: #212121;
-    font-weight: 600; }
-    .content-block a:hover {
-      color: #616161;
-      border-bottom: 1px dotted #8c8c8c; }
-  .content-block .medias {
-    font-size: 110%; }
-    .content-block .medias a {
-      margin-right: .75rem; }
-      .content-block .medias a:hover {
-        border-bottom: 1px dotted #8c8c8c; }
-
 .project h3 {
   font-size: 150%; }
 
@@ -2051,38 +2138,6 @@ header {
     margin-bottom: .25rem;
     border-radius: 4px; }
 
-html, body {
-  font-family: 'Catamaran', sans-serif;
-  background-color: #fff; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Assistant', sans-serif;
-  font-weight: 300; }
-
-p {
-  line-height: 2.15rem;
-  font-weight: 300;
-  font-size: 110%; }
-
-.default-button {
-  border-radius: 4px; }
-
-[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
-  border-radius: 4px; }
-
-nav.pagination {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: 2rem; }
-  nav.pagination a, nav.pagination span, nav.pagination .page-number.current {
-    font-size: 150%;
-    padding: .25rem 1rem .25rem 1rem;
-    display: inline-block;
-    background: #fafafa; }
-  nav.pagination span, nav.pagination .page-number.current {
-    background: #212121; }
-
 .colourset-0 {
   background: #f2849e; }
 
@@ -2100,3 +2155,18 @@ nav.pagination {
 
 .colourset-5 {
   background: #8499e7; }
+
+.engineering {
+  color: #8499e7; }
+
+.design {
+  color: #f2849e; }
+
+.embedded {
+  color: #7bd0c1; }
+
+.entrepreneurship {
+  color: #7ecaf6; }
+
+.dev {
+  color: #c75b9b; }
