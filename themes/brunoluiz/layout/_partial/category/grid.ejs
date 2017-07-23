@@ -18,13 +18,13 @@ let getRandomColour = (min, max) => {
 }
 
 page.posts.each((post) => {
-  let bg_colour = "colourset-"+getRandomColour(0,max_colours);
-  let featured_image = url_for(post.permalink + 'small-' + post.photos[0]) + '.jpg';
+  const bg_colour = "colourset-"+getRandomColour(0,max_colours);
+  const image = url_for(post.permalink + 'small-' + post.photos[0]) + '.jpg';
 %>
   <%- partial('_partial/thumb-item', {
     title: post.title,
     link: post.path,
-    bg_colour: bg_colour,
-    image: featured_image
+    bg_colour,
+    image
   }) %>
 <% }); %>
