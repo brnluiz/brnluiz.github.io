@@ -1,6 +1,4 @@
 <%
-const posts = site.categories.findOne({name: category}).posts.sort('date', -1).limit(limit);
-
 posts.each((post) => {
   const bg_colour = 'colourset-' + random_color();
   const image = url_for(post.permalink + 'small-' + post.photos[0]) + '.jpg';

@@ -1,7 +1,7 @@
 <div class='row column content-block'>
   <h2><%= __(page.category) %> <a href='<%=url_for(config.root)%>'>(return to home)</a></h2>
   <section class='row large-up-3 small-up-1 medium-up-2'>
-    <%- partial('_partial/category/grid')%>
+      <%- partial('_partial/projects/grid', { posts: page.posts })%>
   </section>
 </div>
 
