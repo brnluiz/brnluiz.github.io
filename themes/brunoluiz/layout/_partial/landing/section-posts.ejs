@@ -4,6 +4,6 @@
 
 <% if (site.categories.findOne({name: category}).length > limit) { %>
   <div class='row column see-more'>
-    <a class='default-button' href='<%= url_for("skill/"+category) %>'>See more <%= title %> projects</a>
+    <a class='default-button' href='<%= url_for(config.category_dir+'/'+category) %>'>See more <%= __(category) %> projects</a>
   </div>
 <% } %>

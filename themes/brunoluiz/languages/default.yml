@@ -17,3 +17,11 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+
+# Category humanized names:
+embedded: Embedded Systems
+web: Web Projects
+
+# Landing titles:
+contact: Let's talk?
+intro: So, who am I?

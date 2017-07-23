@@ -1,10 +1,5 @@
-<%
-const category_title = (category) => 
-  config.category_map.find(item => Object.keys(item)[0] === category)[category]
-%>
-
 <div class='row column content-block'>
-  <h2><%= category_title(page.category) %> <a href='<%=url_for(config.root)%>'>(return to home)</a></h2>
+  <h2><%= __(page.category) %> <a href='<%=url_for(config.root)%>'>(return to home)</a></h2>
   <section class='row large-up-3 small-up-1 medium-up-2'>
     <%- partial('_partial/category/grid')%>
   </section>
