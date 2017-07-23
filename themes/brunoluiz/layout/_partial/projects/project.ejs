@@ -1,22 +1,3 @@
-<%
-let choosen_colours = [];
-let max_colours = 5;
-let getRandomColour = (min, max) => {
-  let random = Math.floor(Math.random() * (max - min + 1)) + min;
-
-  // Reset colour arrays if it reached the maximum colour range
-  if(choosen_colours.length == max_colours)
-    choosen_colours = [];
-
-  // Avoid repeated colours for the defined number of max_colours
-  if (choosen_colours.indexOf(random) != -1)
-    return getRandomColour(min,max);
-
-  // Just record which colour was gotten, duh
-  choosen_colours.push(random);
-  return random;
-}
-%>
 <div class='row column project content-block'>
   <div class='row'>
     <div class='large-4 small-12 column'>
@@ -24,16 +5,16 @@ let getRandomColour = (min, max) => {
 
       <%- post.content %>
 
-      <div class='info'><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Delivered in <%=post.deliveredin%></div>
+      <div class='info'><i class='fa fa-calendar-check-o' aria-hidden='true'></i>Delivered in <%=post.deliveredin%></div>
       <% if(post.site) { %>
       <div class='info'>
-        <i class="fa fa-globe" aria-hidden="true"></i>
+        <i class='fa fa-globe' aria-hidden='true'></i>
         <a href='<%=post.site%>'><%=post.site%></a>
       </div>
       <% } %>
       <% if(post.repo) { %>
       <div class='info'>
-        <i class="fa fa-git" aria-hidden="true"></i>
+        <i class='fa fa-git' aria-hidden='true'></i>
         <a href='<%=post.repo%>'><%=post.repo%></a>
       </div>
       <% } %>
@@ -50,7 +31,7 @@ let getRandomColour = (min, max) => {
       <section class='large-up-2 small-up-1 medium-up-2'>
         <% if(post.photos) { %>
             <% post.photos.forEach((photo) => {
-              const bg_colour = "colourset-"+getRandomColour(0,max_colours)
+              const background = 'colorset-'+ random_color()
               const image = url_for(post.permalink + photo + '.jpg')
               const thumb = url_for(post.permalink + 'small-' + photo + '.jpg')
               %>
@@ -58,7 +39,7 @@ let getRandomColour = (min, max) => {
                 title: false,
                 link: image,
                 image: thumb,
-                bg_colour: bg_colour
+                background
               }) %>
             <% }) %>
           <% } %>

@@ -1,6 +1,6 @@
 <%
 posts.each((post) => {
-  const background = 'colourset-' + random_color();
+  const background = 'colorset-' + random_color();
   const image = url_for(post.permalink + 'small-' + post.photos[0]) + '.jpg';
 %>
   <%- partial('_partial/thumb-item', {

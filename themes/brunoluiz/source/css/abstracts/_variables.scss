@@ -2,14 +2,14 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-$colour-1: #f2849e;
-$colour-2: #7ecaf6;
-$colour-3: #7bd0c1;
-$colour-4: #c75b9b;
-$colour-5: #333333;
-$colour-6: #8499e7;
+$color-1: #f2849e;
+$color-2: #7ecaf6;
+$color-3: #7bd0c1;
+$color-4: #c75b9b;
+$color-5: #333333;
+$color-6: #8499e7;
 $header-font-color: rgb(33,33,33);
-$skill-base-colour: rgb(77,77,77);
+$skill-base-color: rgb(77,77,77);
 
 /// Regular font family
 /// @type List
@@ -22,8 +22,6 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 /// Titles font family
 /// @type List
 $title-font-stack: 'Assistant', 'Catamaran', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-
 
 /// Copy text color
 /// @type Color
@@ -45,17 +43,9 @@ $mid-grey: rgb(153, 153, 153) !default;
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
 
-
-
-
-
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
-
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
@@ -65,11 +55,6 @@ $max-width: 1180px !default;
 //   'medium': 768px,
 //   'large': 1024px,
 // ) !default;
-
-
-
-
-
 
 /// Relative or absolute URL where all assets are served from
 /// @type String
