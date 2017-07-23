@@ -47,6 +47,8 @@ highlight:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  embedded: Embedded Systems
+  web: Web Projects
 tag_map:
 
 # Date / Time format
