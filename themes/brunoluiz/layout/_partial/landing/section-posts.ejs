@@ -1,12 +1,9 @@
 <section class='row large-up-3 small-up-1 medium-up-2'>
-<%- partial('_partial/projects/grid', {
-  category: id,
-  limit: limit
-}) %>
+  <%- partial('_partial/projects/grid', { category: id, limit }) %>
 </section>
 
-<% if (site.categories.findOne({name: category}).length > 3) { %>
+<% if (site.categories.findOne({name: category}).length > limit) { %>
   <div class='row column see-more'>
-    <a class='default-button' href='<%= url_for("skill/"+category) %>'>See more <%=title%> projects</a>
+    <a class='default-button' href='<%= url_for("skill/"+category) %>'>See more <%= title %> projects</a>
   </div>
 <% } %>
