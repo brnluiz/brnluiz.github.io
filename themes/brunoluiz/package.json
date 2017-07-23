@@ -1,12 +1,10 @@
 {
-  "name": "hexo-foundation6-theme",
+  "name": "hexo-brunoluiz-theme",
   "version": "0.0.1",
   "private": true,
-  "devDependencies": {
-    "foundation-sites": "^6.2.4"
-  },
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "photoswipe": "^4.1.1"
+    "foundation-sites": "^6.4.1",
+    "photoswipe": "^4.1.2"
   }
 }
