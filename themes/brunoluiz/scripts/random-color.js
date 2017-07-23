@@ -12,7 +12,6 @@ const randomColor = (min, max) => {
 
   // Just record which colour was gotten, duh
   chosenColours.push(random)
-  console.log(chosenColours)
   return random
 }
 
