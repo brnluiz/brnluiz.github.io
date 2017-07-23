@@ -51,7 +51,7 @@ let getRandomColour = (min, max) => {
         <% post.photos.forEach((photo) => {
           let bg_colour = "colourset-"+getRandomColour(0,max_colours);
           let image = url_for(post.permalink + photo + '.jpg');
-          let thumb = url_for(post.permalink + photo + '.thumb.jpg');
+          let thumb = url_for(post.permalink + 'small-' + photo + '.jpg');
           %>
           <%- partial('_partial/thumb-item', {
             title: false,

@@ -82,10 +82,8 @@ node_sass:
   sourceComments: false
 
 thumbnails:
-  masks:
-    - \.jpg$
   profiles:
-    smallThumb:
+    small:
       resize:
-        - 400
-        - 400
+        - 640
+        - 640

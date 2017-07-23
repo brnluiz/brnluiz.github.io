@@ -21,7 +21,7 @@ let posts = site.categories.findOne({name: category}).posts.sort('date', -1).lim
 
 posts.each((post) => {
   let bg_colour = "colourset-"+getRandomColour(0,max_colours);
-  let featured_image = url_for(post.permalink + post.photos[0]) + '.thumb.jpg';
+  let featured_image = url_for(post.permalink + 'small-' + post.photos[0]) + '.jpg';
 %>
   <%- partial('_partial/thumb-item', {
     title: post.title,
