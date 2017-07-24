@@ -22,7 +22,7 @@ $timeout:.1s;
 
   transition: transform $timeout ease-in-out;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) translateZ(0);
 
     .content-bg { filter: grayscale(0%); }
     a { opacity: 0; }
