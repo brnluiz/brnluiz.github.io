@@ -13,6 +13,6 @@ skills:
   - MySQL
   - jQuery
 repo:
-site: http://autonovos.com.br
+url: http://autonovos.com.br
 ---
 E-commerce system for a car reseller. It was made with PHP 5, without any back or front-end framework.

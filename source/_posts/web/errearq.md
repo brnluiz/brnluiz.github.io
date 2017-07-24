@@ -14,6 +14,6 @@ skills:
   - Wordpress
   - PHP
   - SASS
-site: http://errearq.com.br
+url: http://errearq.com.br
 ---
 ERREArq portfolio theme for Wordpress. Based on the Underscores theme.

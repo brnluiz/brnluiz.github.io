@@ -13,7 +13,7 @@ skills:
 photos:
   - neoviz
 repo:
-site:
+url:
 ---
 Neoviz was one of the startups I co-founded and this was the landing page I developed for the Ideation Startup Challenge. The software would make possible to build easy "virtual tours" (like Google Street View) for real estate agencies web sites.
 

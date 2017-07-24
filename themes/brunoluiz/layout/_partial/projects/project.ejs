@@ -6,13 +6,13 @@
       <%- post.content %>
 
       <div class='info'><i class='fa fa-calendar-check-o' aria-hidden='true'></i>Delivered in <%=post.deliveredin%></div>
-      <% if(post.site) { %>
+      <% if (post.url) { %>
       <div class='info'>
         <i class='fa fa-globe' aria-hidden='true'></i>
-        <a href='<%=post.site%>'><%=post.site%></a>
+        <a href='<%=post.url%>'><%=post.url%></a>
       </div>
       <% } %>
-      <% if(post.repo) { %>
+      <% if (post.repo) { %>
       <div class='info'>
         <i class='fa fa-git' aria-hidden='true'></i>
         <a href='<%=post.repo%>'><%=post.repo%></a>

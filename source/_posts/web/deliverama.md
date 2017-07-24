@@ -14,6 +14,6 @@ skills:
   - MySQL
   - Bootstrap
 repo:
-site:
+url:
 ---
 E-commerce website for my first startup, Deliverama. It was a "online food plaza", where the user could check all the nearby restaurants, go through the menu and make the order. It used a modified version of GoCart, an e-commerce software based on CodeIgniter, and it was my first big project.

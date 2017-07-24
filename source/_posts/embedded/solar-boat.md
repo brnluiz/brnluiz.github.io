@@ -13,6 +13,6 @@ skills:
   - C++
   - QT
 repo:
-site:
+url:
 ---
 Simple HMI (human-machine interface) for a R&D solar/photovoltaic boat. This was my first R&D project in the university.

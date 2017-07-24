@@ -12,6 +12,6 @@ skills:
 photos:
   - autonovoscom1
 repo:
-site: http://autonovos.com
+url: http://autonovos.com
 ---
 Dashboard with some useful links for Brazilian car sellers and a feed with the latests car news

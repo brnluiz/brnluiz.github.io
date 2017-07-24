@@ -14,6 +14,6 @@ skills:
   - MS Bot Framework
   - JS
 repo: https://github.com/brnluiz/ru-bot
-site: https://www.facebook.com/pRUBot-1841712192718317/
+url: https://www.facebook.com/pRUBot-1841712192718317/
 ---
 Chat bot aimed for UFSC students. Besides having the University Restaurant (RU) Menu, it notifies the users with the menu of the day.

@@ -16,6 +16,6 @@ photos:
   - evplaylist1
   - evplaylist2
 repo: https://github.com/brnluiz/evplaylist
-site: http://brunoluiz.net/evplaylist
+url: http://brunoluiz.net/evplaylist
 ---
 Web app which gathers music posts from Facebook Events and make a playlist from it.

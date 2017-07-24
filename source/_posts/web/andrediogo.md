@@ -16,6 +16,6 @@ skills:
   - PHP
   - SASS
 repo: https://github.com/brnluiz/wp-theme-ads
-site: http://andrediogo.com
+url: http://andrediogo.com
 ---
 Andre Diogo's portfolio theme for Wordpress. Based on the Underscores theme.
