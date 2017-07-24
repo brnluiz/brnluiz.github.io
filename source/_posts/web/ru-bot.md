@@ -16,4 +16,4 @@ skills:
 repo: https://github.com/brnluiz/ru-bot
 site: https://www.facebook.com/pRUBot-1841712192718317/
 ---
-Chat bot aimed for UFSC students. It have the University Restaurant (RU) Menu and notifies the users about the day menu.
+Chat bot aimed for UFSC students. Besides having the University Restaurant (RU) Menu, it notifies the users with the menu of the day.
