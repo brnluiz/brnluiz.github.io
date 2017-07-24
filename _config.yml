@@ -87,3 +87,7 @@ thumbnails:
       resize:
         - 640
         - 640
+
+browserify:
+    exclude:
+    - '**/*.min.js'

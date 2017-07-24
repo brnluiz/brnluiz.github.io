@@ -36,10 +36,10 @@
               const thumb = url_for(post.permalink + 'small-' + photo + '.jpg')
               %>
               <%- partial('_partial/thumb-item', {
-                title: false,
                 link: image,
                 image: thumb,
-                background
+                background,
+                lightbox: true
               }) %>
             <% }) %>
           <% } %>

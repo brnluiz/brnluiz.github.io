@@ -3,6 +3,7 @@
 @import 'https://fonts.googleapis.com/css?family=Assistant:300,700|Catamaran:300,400,700';
 
 @import '../../node_modules/foundation-sites/scss/foundation';
+@import '../../node_modules/lightbox2/src/css/lightbox';
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-typography;

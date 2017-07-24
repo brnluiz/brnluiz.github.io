@@ -1,8 +1,11 @@
 <div class='column'>
   <div class='thumb-item'>
     <div class='content-bg' style='background-image: url("<%= image %>")'></div>
-    <a href='<%= url_for(link) %>' class='<%= background %>'></a>
-    <% if(title) { %>
+    <a href='<%= url_for(link) %>' 
+      class='<%= background %>'
+      <% if (locals.lightbox) { %> data-lightbox="image-projects" <% } %>>
+    </a>
+    <% if (locals.title) { %>
     <div class='title'><%= title %></div>
     <% } %>
   </div>
