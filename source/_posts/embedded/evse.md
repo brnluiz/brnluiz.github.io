@@ -9,6 +9,7 @@ photos:
   - evse1
   - evse2
   - evse3
+  - evse4
 skills:
   - Java
   - Embedded Linux
