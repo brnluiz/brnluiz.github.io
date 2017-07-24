@@ -72,7 +72,7 @@ theme: brunoluiz
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/brnluiz/brnluiz.github.io
+  repo: git@github.com:brnluiz/brnluiz.github.io.git
   branch: master
 
 node_sass:
